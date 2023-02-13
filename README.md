@@ -63,11 +63,11 @@ To get a local copy up and running, follow these steps.
 
 1. Download the **Zip** file or clone the repo with:
 ```bash
-git clone https://github.com/hienphan/Leaderboard.git
+git clone https://github.com/hienphan/Math-magicians.git
 ```
 3. To access cloned directory run:
 ```bash
-cd MyPortfolio
+cd Math-magicians
 ```
 3. Open it with the live server
 
@@ -104,7 +104,7 @@ Example command:
 
 ### Deployment
 
-The project was deployed which you can access this link: https://hienphan0111.github.io/Leaderboard/dist
+The project was deployed which you can access this link: 
 
 <!--
 Example:
