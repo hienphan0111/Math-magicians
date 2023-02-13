@@ -3,8 +3,7 @@ import React from 'react';
 import logo from './image/logo-math.webp';
 import './App.css';
 
-const App = () => {
-  return (
+const App = () => (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -12,6 +11,5 @@ const App = () => {
       </header>
     </div>
   );
-}
 
 export default App;
