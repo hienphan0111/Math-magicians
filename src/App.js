@@ -1,7 +1,9 @@
-import logo from './image/math-logo.webp';
+import React, { Fragment } from 'react';
+import { ReactDOM } from 'react-dom';
+import logo from './image/logo-math.webp';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
