@@ -1,0 +1,50 @@
+.cal-container {
+  width: 400px;
+  height: 500px;
+  background-color: aquamarine;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  #result {
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    justify-self: end;
+  }
+
+  #multi {
+    grid-column-start: 4;
+    grid-row-start: 3;
+  }
+
+  #plus {
+    grid-column-start: 4;
+    grid-row-start: 4;
+  }
+
+  #minus {
+    grid-column-start: 4;
+    grid-row-start: 5;
+  }
+
+  #equal {
+    grid-column-start: 4;
+    grid-row-start: 6;
+  }
+
+  #zero {
+    grid-column-start: 1;
+    grid-row-start: 6;
+    grid-column-end: span 2;
+  }
+
+  #dot {
+    
+  }
+}
