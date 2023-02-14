@@ -1,21 +1,26 @@
 .cal-container {
   width: 400px;
   height: 500px;
-  background-color: aquamarine;
   margin: 10px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
   justify-content: center;
   align-items: center;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
 
   #result {
     grid-column-start: 1;
     grid-column-end: span 4;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.567);
     height: 100%;
-    width: 100%;
-    justify-self: end;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-size: 20px;
   }
 
   #multi {
@@ -44,7 +49,52 @@
     grid-column-end: span 2;
   }
 
-  #dot {
-    
+  #one {
+    grid-column-start: 1;
+    grid-row-start: 5;
   }
+
+  #two {
+    grid-column-start: 2;
+    grid-row-start: 5;
+  }
+
+  #four {
+    grid-column-start: 1;
+    grid-row-start: 4;
+  }
+
+  
+  #five {
+    grid-column-start: 2;
+    grid-row-start: 4;
+  }
+
+  #seven {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  #eight {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .orange {
+    background-color: orange;
+    border: 0.7px solid #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.border-center {
+  border: 0.5px solid #000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
