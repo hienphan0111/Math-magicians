@@ -59,6 +59,11 @@
     grid-row-start: 5;
   }
 
+  #three {
+    grid-column-start: 3;
+    grid-row-start: 5;
+  }
+
   #four {
     grid-column-start: 1;
     grid-row-start: 4;
@@ -66,6 +71,11 @@
 
   #five {
     grid-column-start: 2;
+    grid-row-start: 4;
+  }
+
+  #six {
+    grid-column-start: 3;
     grid-row-start: 4;
   }
 
@@ -79,7 +89,16 @@
     grid-row-start: 3;
   }
 
-  .orange {
+  #nine {
+    grid-column-start: 3;
+    grid-row-start: 3;
+  }
+
+  #equal,
+  #minus,
+  #plus,
+  #multi,
+  #divide {
     background-color: orange;
     border: 0.7px solid #000;
     height: 100%;
