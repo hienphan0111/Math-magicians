@@ -1,29 +1,132 @@
-import React from 'react';
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 import './Calculator.scss';
 
-const Calculator = () => (
-  <div className="cal-container">
-    <span id="result" className="border-center">0</span>
-    <span id="ac" className="border-center">AC</span>
-    <span id="plus-minus" className="border-center">&#177;</span>
-    <span id="mod" className="border-center">%</span>
-    <span id="divide" className="orange">&#247;</span>
-    <span id="multi" className="orange">x</span>
-    <span id="minus" className="orange">-</span>
-    <span id="plus" className="orange">+</span>
-    <span id="equal" className="orange">=</span>
-    <span id="nine" className="border-center">9</span>
-    <span id="eight" className="border-center">8</span>
-    <span id="seven" className="border-center">7</span>
-    <span id="six" className="border-center">6</span>
-    <span id="five" className="border-center">5</span>
-    <span id="four" className="border-center">4</span>
-    <span id="three" className="border-center">3</span>
-    <span id="two" className="border-center">2</span>
-    <span id="one" className="border-center">1</span>
-    <span id="zero" className="border-center">0</span>
-    <span id="dot" className="border-center">.</span>
-  </div>
-);
+const Calculator = () => {
+  const keys = [
+    {
+      name: 'AC',
+      id: 'ac',
+    },
+    {
+      name: '+/-',
+      id: 'plus-minus',
+    },
+    {
+      name: '%',
+      id: 'mod',
+    },
+    {
+      name: '÷',
+      id: 'divide',
+    },
+    {
+      name: 'x',
+      id: 'multi',
+    },
+    {
+      name: '+',
+      id: 'plus',
+    },
+    {
+      name: '-',
+      id: 'minus',
+    },
+    {
+      name: '=',
+      id: 'equal',
+    },
+    {
+      name: '.',
+      id: 'dot',
+    },
+    {
+      name: '0',
+      id: 'zero',
+    },
+    {
+      name: '1',
+      id: 'one',
+    },
+    {
+      name: '2',
+      id: 'two',
+    },
+    {
+      name: '3',
+      id: 'three',
+    },
+    {
+      name: '4',
+      id: 'four',
+    },
+    {
+      name: '5',
+      id: 'five',
+    },
+    {
+      name: '6',
+      id: 'six',
+    },
+    {
+      name: '7',
+      id: 'seven',
+    },
+    {
+      name: '8',
+      id: 'eight',
+    },
+    {
+      name: '9',
+      id: 'nine',
+    },
+  ];
 
+  const obj = {
+    total: null,
+    next: null,
+    operation: null,
+  };
+
+  const [result, setResult] = useState(obj);
+
+  const calHandler = (e) => {
+    const btn = e.target.innerText;
+    return setResult(calculate(result, btn));
+  };
+
+  const display = (item) => {
+    if ((!item.total) && (!item.next)) {
+      return '0';
+    }
+    if (!item.total) {
+      return item.next;
+    }
+    if (item.next && item.total && item.operation) {
+      return item.next;
+    }
+    return item.total;
+  };
+
+  return (
+    <div className="cal-container">
+      <span id="result" className="border-center">{ display(result) }</span>
+      {
+        keys.map((key) => (
+          <span
+            key={key.id}
+            id={key.id}
+            role="button"
+            tabIndex={0}
+            onClick={calHandler}
+            onKeyDown={calHandler}
+            className="border-center"
+          >
+            {key.name}
+          </span>
+        ))
+      }
+    </div>
+  );
+};
 export default Calculator;
