@@ -159,7 +159,7 @@ I would like to thank Microverse
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [GNU 3.0](./LICENSE.md) licensed.
 And also is <a href="https://creativecommons.org/licenses/">Creative Commons License </a>
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.quote-container {
+  max-width: 480px;
+  margin: 20px auto;
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+
+  span {
+    display: flex;
+    justify-content: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+}

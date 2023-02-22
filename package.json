@@ -1,13 +1,17 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://hienphan0111.github.io/Math-magicians/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "big": "^0.5.2",
+    "big.js": "^6.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "scss": "^0.2.4",
     "web-vitals": "^2.1.4"
@@ -16,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +53,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "sass": "^1.58.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
