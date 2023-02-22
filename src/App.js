@@ -1,15 +1,21 @@
 import React from 'react';
-import logo from './image/logo-math.webp';
-import './App.css';
-import Calculator from './components/Calculator';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from 'route/Home';
+import Cal from 'route/Calculator.route';
+import Quote from 'route/Quote';
+import Layout from 'route/Layout';
 
 const App = () => (
   <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1>Math Magicians</h1>
-    </header>
-    <Calculator />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="calculator" element={<Cal />} />
+          <Route path="quote" element={<Quote />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </div>
 );
 
