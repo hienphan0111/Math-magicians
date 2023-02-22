@@ -46,7 +46,7 @@ This App allow users implement their calculators.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-To see the demo version, you can <a href=""> Click here </a>
+To see the demo version, you can <a href="https://hienphan0111.github.io/Math-magicians/"> Click here </a>
 
 <!-- GETTING STARTED -->
 
