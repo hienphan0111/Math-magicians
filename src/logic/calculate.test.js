@@ -36,4 +36,22 @@ describe('Calculate module', () => {
     };
     expect(calculate(obj,'+')).toStrictEqual({"next": null, "operation": "+", "total": "9"});
   });
+
+  test('+/- button', () => {
+    const obj = {
+      total: null,
+      next: '9',
+      operation: null
+    };
+    expect(calculate(obj,'+/-')).toStrictEqual({"next": "-9", "operation": null, "total": null});
+  });
+
+  test('. button', () => {
+    const obj = {
+      total: null,
+      next: '9',
+      operation: null
+    };
+    expect(calculate(obj,'.')).toStrictEqual({"next": "9.", "operation": null, "total": null});
+  });
 });
