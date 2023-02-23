@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator component Snapshot testing suite Matches Home DOM Snapshot 1`] = `
+<div
+  className="home-container"
+>
+  <h2>
+    Welcome to our page
+  </h2>
+  <p>
+    The Calculator app is a modern Web app written in React and typical langues that used to for many web apps. The app provides standard calculator functionality.
+  </p>
+  <p>
+    This app aim to learn how to create an app using React framework
+  </p>
+</div>
+`;
+
+exports[`Calculator component Snapshot testing suite Matches Layout DOM Snapshot 1`] = `
+<div
+  className="cal-container"
+>
+  <span
+    className="border-center"
+    id="result"
+  >
+    0
+  </span>
+  <span
+    className="border-center"
+    id="ac"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    AC
+  </span>
+  <span
+    className="border-center"
+    id="plus-minus"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    +/-
+  </span>
+  <span
+    className="border-center"
+    id="mod"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    %
+  </span>
+  <span
+    className="border-center"
+    id="divide"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    ÷
+  </span>
+  <span
+    className="border-center"
+    id="multi"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    x
+  </span>
+  <span
+    className="border-center"
+    id="plus"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    +
+  </span>
+  <span
+    className="border-center"
+    id="minus"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    -
+  </span>
+  <span
+    className="border-center"
+    id="equal"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    =
+  </span>
+  <span
+    className="border-center"
+    id="dot"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    .
+  </span>
+  <span
+    className="border-center"
+    id="zero"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    0
+  </span>
+  <span
+    className="border-center"
+    id="one"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    1
+  </span>
+  <span
+    className="border-center"
+    id="two"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    2
+  </span>
+  <span
+    className="border-center"
+    id="three"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    3
+  </span>
+  <span
+    className="border-center"
+    id="four"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    4
+  </span>
+  <span
+    className="border-center"
+    id="five"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    5
+  </span>
+  <span
+    className="border-center"
+    id="six"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    6
+  </span>
+  <span
+    className="border-center"
+    id="seven"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    7
+  </span>
+  <span
+    className="border-center"
+    id="eight"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    8
+  </span>
+  <span
+    className="border-center"
+    id="nine"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    9
+  </span>
+</div>
+`;
+
+exports[`Calculator component Snapshot testing suite Matches Layout DOM Snapshot 2`] = `
+<div
+  className="main-container"
+>
+  <nav
+    className="navbar"
+  >
+    <h1>
+      Math Magicians
+    </h1>
+    <ul>
+      <li>
+        <a
+          className="item"
+          href="/Math-magicians"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          className="item"
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          className="item last"
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Calculator component Snapshot testing suite Matches Quote DOM Snapshot 1`] = `
+<div
+  className="quote-container"
+>
+  <p>
+    "
+    Mathematics expresses values that reflect the cosmos,including orderliness, balance, harmony, logic, and abstract beauty.
+    "
+  </p>
+  <span>
+    Deepak Chopra
+  </span>
+</div>
+`;
