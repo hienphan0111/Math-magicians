@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://hienphan0111.github.io/Math-magicians/",
+  "homepage": "https://hienphan0111.github.io/Math-magicians",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
